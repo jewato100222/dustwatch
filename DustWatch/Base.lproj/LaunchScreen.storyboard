@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desert_background" translatesAutoresizingMaskIntoConstraints="NO" id="MmF-a0-lLA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="4KI-wl-lGO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desert_overlay" translatesAutoresizingMaskIntoConstraints="NO" id="ybA-dO-7Be">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1479"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="vA4-jt-9Rw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watchCamera" translatesAutoresizingMaskIntoConstraints="NO" id="zqp-6N-UD5">
+                                <rect key="frame" x="60" y="132" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Tsu-Ca-Bkr"/>
+                                    <constraint firstAttribute="width" constant="256" id="ube-f9-k7n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DustWatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3a-UK-iHN">
+                                <rect key="frame" x="59" y="373" width="257" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="KiB-lN-kkN"/>
+                                    <constraint firstAttribute="width" constant="257" id="l9k-D6-mA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLC-l9-6tL">
+                                <rect key="frame" x="44" y="464" width="287" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="Z0V-N0-gXL"/>
+                                    <constraint firstAttribute="height" constant="108" id="f5j-NR-xuJ"/>
+                                </constraints>
+                                <string key="text">powered by
+
+technologies</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Epiphyte Black" translatesAutoresizingMaskIntoConstraints="NO" id="Bny-ID-RTh">
+                                <rect key="frame" x="124" y="500" width="126" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Ym6-tv-u67"/>
+                                    <constraint firstAttribute="height" constant="36" id="m9H-0D-zGc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xLC-l9-6tL" firstAttribute="top" secondItem="o3a-UK-iHN" secondAttribute="bottom" constant="33" id="0Br-mb-fJV"/>
+                            <constraint firstItem="Bny-ID-RTh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="9sF-eE-Xgm"/>
+                            <constraint firstItem="MmF-a0-lLA" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="BxL-vc-0AD"/>
+                            <constraint firstItem="Bny-ID-RTh" firstAttribute="top" secondItem="o3a-UK-iHN" secondAttribute="bottom" constant="69" id="CbD-AW-U67"/>
+                            <constraint firstItem="zqp-6N-UD5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Gan-i6-2Gx"/>
+                            <constraint firstAttribute="bottom" secondItem="ybA-dO-7Be" secondAttribute="bottom" constant="-667" id="INP-jP-HIe"/>
+                            <constraint firstItem="MmF-a0-lLA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="LN4-zq-IHw"/>
+                            <constraint firstItem="xLC-l9-6tL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="T4T-MM-B1E"/>
+                            <constraint firstItem="MmF-a0-lLA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aGy-6N-WfV"/>
+                            <constraint firstItem="ybA-dO-7Be" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dWL-oz-Lr8"/>
+                            <constraint firstItem="o3a-UK-iHN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="gPc-gF-vhc"/>
+                            <constraint firstItem="ybA-dO-7Be" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rJf-qy-vRX"/>
+                            <constraint firstItem="zqp-6N-UD5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="wU1-rM-g43"/>
+                            <constraint firstItem="o3a-UK-iHN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="329" id="xNH-5H-LtL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.399999999999999" y="373.76311844077964"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Epiphyte Black" width="252" height="71"/>
+        <image name="desert_background" width="1125" height="2155"/>
+        <image name="desert_overlay" width="750" height="1334"/>
+        <image name="watchCamera" width="381" height="381"/>
+    </resources>
+</document>
